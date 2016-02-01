@@ -11,6 +11,8 @@ namespace AtelierXNA
         const int NB_TRIANGLES1 = 8;
         const int NB_SOMMETS2 = 6;
         const int NB_TRIANGLES2 = 2;
+
+        string NomTexture { get; set; }
         VertexPositionTexture[] Sommets1 { get; set; }
         VertexPositionTexture[] Sommets2 { get; set; }
         Vector3 Origine { get; set; }
@@ -20,13 +22,14 @@ namespace AtelierXNA
         Texture2D TextureCube { get; set; }
         public BoundingBox ZoneCollision { get; set; }
 
-        public CubeColoré(Game game, Vector3 positionInitiale, Vector3 dimension)
+        public CubeColoré(Game game, Vector3 positionInitiale, Vector3 dimension, string nomTexture)
             : base(game, 1f, Vector3.Zero, positionInitiale)
         {
             ZoneCollision = new BoundingBox(new Vector3(positionInitiale.X - dimension.X / 2, positionInitiale.Y - dimension.Y /2, positionInitiale.Z - dimension.Z / 2), 
                             new Vector3(positionInitiale.X + dimension.X / 2, positionInitiale.Y + dimension.Y , positionInitiale.Z + dimension.Z / 2));
             Delta = dimension;
             Origine = new Vector3(-Delta.X / 2, -Delta.Y / 2, -Delta.Z / 2);
+            NomTexture = nomTexture;
         }
 
         public override void Initialize()
@@ -39,7 +42,7 @@ namespace AtelierXNA
         protected override void LoadContent()
         {
             GestionnaireDeTextures = Game.Services.GetService(typeof(RessourcesManager<Texture2D>)) as RessourcesManager<Texture2D>;
-            TextureCube = GestionnaireDeTextures.Find("old_brick_01");
+            TextureCube = GestionnaireDeTextures.Find(NomTexture);
 
             EffetDeBase = new BasicEffect(GraphicsDevice);
             EffetDeBase.TextureEnabled = true;

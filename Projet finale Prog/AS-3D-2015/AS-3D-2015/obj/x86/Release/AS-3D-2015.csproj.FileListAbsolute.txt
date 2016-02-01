@@ -85,3 +85,33 @@ C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015
 C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\old_brick_01.xnb
 C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\Tuile.xnb
 C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Sounds\walk_slow.xnb
+C:\Users\Samuel\Documents\GitHub\Projet_Finale_Programmation\Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Fonts\Arial20.xnb
+C:\Users\Samuel\Documents\GitHub\Projet_Finale_Programmation\Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Models\airplane_blue.xnb
+C:\Users\Samuel\Documents\GitHub\Projet_Finale_Programmation\Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Models\Feisar.xnb
+C:\Users\Samuel\Documents\GitHub\Projet_Finale_Programmation\Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Models\ARC170.xnb
+C:\Users\Samuel\Documents\GitHub\Projet_Finale_Programmation\Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\CielArrière.xnb
+C:\Users\Samuel\Documents\GitHub\Projet_Finale_Programmation\Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\CielAvant.xnb
+C:\Users\Samuel\Documents\GitHub\Projet_Finale_Programmation\Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\CielDroite.xnb
+C:\Users\Samuel\Documents\GitHub\Projet_Finale_Programmation\Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\CielGauche.xnb
+C:\Users\Samuel\Documents\GitHub\Projet_Finale_Programmation\Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\CielDessus.xnb
+C:\Users\Samuel\Documents\GitHub\Projet_Finale_Programmation\Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\Terrain.xnb
+C:\Users\Samuel\Documents\GitHub\Projet_Finale_Programmation\Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\old_brick_01.xnb
+C:\Users\Samuel\Documents\GitHub\Projet_Finale_Programmation\Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Sounds\landing.xnb
+C:\Users\Samuel\Documents\GitHub\Projet_Finale_Programmation\Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Songs\backgroundMusic.xnb
+C:\Users\Samuel\Documents\GitHub\Projet_Finale_Programmation\Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Sounds\First_Sentence.xnb
+C:\Users\Samuel\Documents\GitHub\Projet_Finale_Programmation\Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Sounds\walk.xnb
+C:\Users\Samuel\Documents\GitHub\Projet_Finale_Programmation\Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Sounds\jump.xnb
+C:\Users\Samuel\Documents\GitHub\Projet_Finale_Programmation\Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Sounds\walk_slow.xnb
+C:\Users\Samuel\Documents\GitHub\Projet_Finale_Programmation\Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Models\airplane_blue_tex_0.xnb
+C:\Users\Samuel\Documents\GitHub\Projet_Finale_Programmation\Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\diffuse_0.xnb
+C:\Users\Samuel\Documents\GitHub\Projet_Finale_Programmation\Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Models\ARC170_T_0.xnb
+C:\Users\Samuel\Documents\GitHub\Projet_Finale_Programmation\Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Songs\backgroundMusic.wma
+C:\Users\Samuel\Documents\GitHub\Projet_Finale_Programmation\Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\AS-3D-2015.exe
+C:\Users\Samuel\Documents\GitHub\Projet_Finale_Programmation\Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\AS-3D-2015.pdb
+C:\Users\Samuel\Documents\GitHub\Projet_Finale_Programmation\Projet finale Prog\AS-3D-2015\AS-3D-2015\obj\x86\Release\AS-3D-2015.csprojResolveAssemblyReference.cache
+C:\Users\Samuel\Documents\GitHub\Projet_Finale_Programmation\Projet finale Prog\AS-3D-2015\AS-3D-2015\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Samuel\Documents\GitHub\Projet_Finale_Programmation\Projet finale Prog\AS-3D-2015\AS-3D-2015\obj\x86\Release\AS-3D-2015.exe
+C:\Users\Samuel\Documents\GitHub\Projet_Finale_Programmation\Projet finale Prog\AS-3D-2015\AS-3D-2015\obj\x86\Release\AS-3D-2015.pdb
+C:\Users\Samuel\Documents\GitHub\Projet_Finale_Programmation\Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\Ceiling.xnb
+C:\Users\Samuel\Documents\GitHub\Projet_Finale_Programmation\Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\Floor.xnb
+C:\Users\Samuel\Documents\GitHub\Projet_Finale_Programmation\Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\Wall.xnb

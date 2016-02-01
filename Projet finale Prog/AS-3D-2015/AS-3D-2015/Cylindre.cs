@@ -59,9 +59,7 @@ namespace AtelierXNA
         void CréerTableauPoints()
         {
             float graduationAngles = (float)(2*Math.PI / NbColonnes);
-            //CréerPremièreBase(graduationAngles);
             CréerFaceLatérale(graduationAngles);
-            //CréerDeuxièmeBase(graduationAngles);
         }
         protected override void InitialiserSommets()
         {

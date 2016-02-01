@@ -16,6 +16,8 @@ namespace AtelierXNA
     {
         const int NB_SOMMETS = 6;
         const int NB_TRIANGLES = 2;
+
+        string NomTexture { get; set; }
         VertexPositionTexture[] Sommets { get; set; }
         Vector3 Origine { get; set; }
         Vector3 Delta { get; set; }
@@ -23,11 +25,12 @@ namespace AtelierXNA
         RessourcesManager<Texture2D> GestionnaireDeTextures { get; set; }
         Texture2D TextureTuile { get; set; }
 
-        public Tuile(Game game, Vector3 positionInitiale, Vector3 dimension)
+        public Tuile(Game game, Vector3 positionInitiale, Vector3 dimension, string nomTexture)
             : base(game, 1f, Vector3.Zero, positionInitiale)
         {
             Delta = dimension;
             Origine = new Vector3(-Delta.X / 2, -Delta.Y / 2, -Delta.Z / 2);
+            NomTexture = nomTexture;
         }
 
         public override void Initialize()
@@ -39,7 +42,7 @@ namespace AtelierXNA
         protected override void LoadContent()
         {
             GestionnaireDeTextures = Game.Services.GetService(typeof(RessourcesManager<Texture2D>)) as RessourcesManager<Texture2D>;
-            TextureTuile = GestionnaireDeTextures.Find("Tuile");
+            TextureTuile = GestionnaireDeTextures.Find(NomTexture);
 
             EffetDeBase = new BasicEffect(GraphicsDevice);
             EffetDeBase.TextureEnabled = true;
@@ -73,11 +76,18 @@ namespace AtelierXNA
             EffetDeBase.World = GetMonde();
             EffetDeBase.View = CaméraJeu.View;
             EffetDeBase.Projection = CaméraJeu.Projection;
+
+            RasterizerState old = GraphicsDevice.RasterizerState;
+            RasterizerState ras = new RasterizerState();
+            ras.CullMode = CullMode.None;
+            GraphicsDevice.RasterizerState = ras;
+
             foreach (EffectPass passeEffet in EffetDeBase.CurrentTechnique.Passes)
             {
                 passeEffet.Apply();
                 GraphicsDevice.DrawUserPrimitives<VertexPositionTexture>(PrimitiveType.TriangleList, Sommets, 0, NB_TRIANGLES);
             }
+            GraphicsDevice.RasterizerState = old;
             base.Draw(gameTime);
         }
     }

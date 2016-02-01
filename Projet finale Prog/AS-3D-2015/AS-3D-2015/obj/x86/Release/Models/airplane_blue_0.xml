@@ -3,7 +3,7 @@
   <Asset Type="Graphics:NodeContent">
     <Name>NoName_1-0</Name>
     <Identity>
-      <SourceFilename>C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015Content\Models\airplane_blue.x</SourceFilename>
+      <SourceFilename>C:\Users\Samuel\Documents\GitHub\Projet_Finale_Programmation\Projet finale Prog\AS-3D-2015\AS-3D-2015Content\Models\airplane_blue.x</SourceFilename>
       <SourceTool>XImporter</SourceTool>
     </Identity>
     <Transform>1 0 0 0 0 1 0 0 0 0 1 0 1E-06 0 -1E-06 1</Transform>
@@ -45,7 +45,7 @@
   <Resources>
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Identity>
-        <SourceFilename>C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015Content\Models\airplane_blue.x</SourceFilename>
+        <SourceFilename>C:\Users\Samuel\Documents\GitHub\Projet_Finale_Programmation\Projet finale Prog\AS-3D-2015\AS-3D-2015Content\Models\airplane_blue.x</SourceFilename>
         <SourceTool>XImporter</SourceTool>
       </Identity>
       <OpaqueData>

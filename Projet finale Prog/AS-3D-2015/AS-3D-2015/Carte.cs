@@ -60,13 +60,16 @@ namespace AtelierXNA
 
                     if (PtsSommets[i, j].W == 1)
                     {
+                        Game.Components.Add(new Tuile(Game, new Vector3(PtsSommets[i, j].X, PtsSommets[i, j].Y, PtsSommets[i, j].Z), Delta, "Floor"));
                         Game.Components.Add(new Tuile(Game,
-                                               new Vector3(PtsSommets[i, j].X, PtsSommets[i, j].Y, PtsSommets[i, j].Z), Delta));
+                                               new Vector3(PtsSommets[i, j].X, PtsSommets[i, j].Y + 1.5f * Delta.Y, PtsSommets[i, j].Z), Delta, "Ceiling"));
                     }
                     else
                     {
                         Game.Components.Add(new CubeColoré(Game,
-                                               new Vector3(PtsSommets[i, j].X, PtsSommets[i, j].Y, PtsSommets[i, j].Z), Delta));
+                                               new Vector3(PtsSommets[i, j].X, PtsSommets[i, j].Y, PtsSommets[i, j].Z), new Vector3(Delta.X, Delta.Y, Delta.Z), "Wall"));
+                        Game.Components.Add(new CubeColoré(Game,
+                                               new Vector3(PtsSommets[i, j].X, PtsSommets[i, j].Y + Delta.Y, PtsSommets[i, j].Z), new Vector3(Delta.X, Delta.Y, Delta.Z), "Wall"));
                     }
                     ++k;
                 }
