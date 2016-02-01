@@ -1,0 +1,87 @@
+C:\Users\antoine\Desktop\Antoine\Session 3\Programmation\Activité synthèse 3D\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Fonts\Arial20.xnb
+C:\Users\antoine\Desktop\Antoine\Session 3\Programmation\Activité synthèse 3D\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Models\airplane_blue.xnb
+C:\Users\antoine\Desktop\Antoine\Session 3\Programmation\Activité synthèse 3D\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Models\Feisar.xnb
+C:\Users\antoine\Desktop\Antoine\Session 3\Programmation\Activité synthèse 3D\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Models\ARC170.xnb
+C:\Users\antoine\Desktop\Antoine\Session 3\Programmation\Activité synthèse 3D\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\CielArrière.xnb
+C:\Users\antoine\Desktop\Antoine\Session 3\Programmation\Activité synthèse 3D\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\CielAvant.xnb
+C:\Users\antoine\Desktop\Antoine\Session 3\Programmation\Activité synthèse 3D\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\CielDroite.xnb
+C:\Users\antoine\Desktop\Antoine\Session 3\Programmation\Activité synthèse 3D\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\CielGauche.xnb
+C:\Users\antoine\Desktop\Antoine\Session 3\Programmation\Activité synthèse 3D\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\CielDessus.xnb
+C:\Users\antoine\Desktop\Antoine\Session 3\Programmation\Activité synthèse 3D\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\Terrain.xnb
+C:\Users\antoine\Desktop\Antoine\Session 3\Programmation\Activité synthèse 3D\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\TheWalkingDead.xnb
+C:\Users\antoine\Desktop\Antoine\Session 3\Programmation\Activité synthèse 3D\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\HungerGames.xnb
+C:\Users\antoine\Desktop\Antoine\Session 3\Programmation\Activité synthèse 3D\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\StarWars7.xnb
+C:\Users\antoine\Desktop\Antoine\Session 3\Programmation\Activité synthèse 3D\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\DétailsTerrain.xnb
+C:\Users\antoine\Desktop\Antoine\Session 3\Programmation\Activité synthèse 3D\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Models\airplane_blue_tex_0.xnb
+C:\Users\antoine\Desktop\Antoine\Session 3\Programmation\Activité synthèse 3D\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\diffuse_0.xnb
+C:\Users\antoine\Desktop\Antoine\Session 3\Programmation\Activité synthèse 3D\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Models\ARC170_T_0.xnb
+C:\Users\antoine\Desktop\Antoine\Session 3\Programmation\Activité synthèse 3D\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\AS-3D-2015.exe
+C:\Users\antoine\Desktop\Antoine\Session 3\Programmation\Activité synthèse 3D\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\AS-3D-2015.pdb
+C:\Users\antoine\Desktop\Antoine\Session 3\Programmation\Activité synthèse 3D\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\AS-3D-Outils.dll
+C:\Users\antoine\Desktop\Antoine\Session 3\Programmation\Activité synthèse 3D\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\obj\x86\Release\AS-3D-2015.csprojResolveAssemblyReference.cache
+C:\Users\antoine\Desktop\Antoine\Session 3\Programmation\Activité synthèse 3D\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\antoine\Desktop\Antoine\Session 3\Programmation\Activité synthèse 3D\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\obj\x86\Release\AS-3D-2015.exe
+C:\Users\antoine\Desktop\Antoine\Session 3\Programmation\Activité synthèse 3D\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\obj\x86\Release\AS-3D-2015.pdb
+C:\Users\antoine\Desktop\Projet Prog\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Fonts\Arial20.xnb
+C:\Users\antoine\Desktop\Projet Prog\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Models\airplane_blue.xnb
+C:\Users\antoine\Desktop\Projet Prog\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Models\Feisar.xnb
+C:\Users\antoine\Desktop\Projet Prog\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Models\ARC170.xnb
+C:\Users\antoine\Desktop\Projet Prog\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\CielArrière.xnb
+C:\Users\antoine\Desktop\Projet Prog\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\CielAvant.xnb
+C:\Users\antoine\Desktop\Projet Prog\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\CielDroite.xnb
+C:\Users\antoine\Desktop\Projet Prog\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\CielGauche.xnb
+C:\Users\antoine\Desktop\Projet Prog\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\CielDessus.xnb
+C:\Users\antoine\Desktop\Projet Prog\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\Terrain.xnb
+C:\Users\antoine\Desktop\Projet Prog\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\TheWalkingDead.xnb
+C:\Users\antoine\Desktop\Projet Prog\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\HungerGames.xnb
+C:\Users\antoine\Desktop\Projet Prog\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\StarWars7.xnb
+C:\Users\antoine\Desktop\Projet Prog\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\DétailsTerrain.xnb
+C:\Users\antoine\Desktop\Projet Prog\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Models\airplane_blue_tex_0.xnb
+C:\Users\antoine\Desktop\Projet Prog\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\diffuse_0.xnb
+C:\Users\antoine\Desktop\Projet Prog\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Models\ARC170_T_0.xnb
+C:\Users\antoine\Desktop\Projet Prog\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\AS-3D-2015.exe
+C:\Users\antoine\Desktop\Projet Prog\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\AS-3D-2015.pdb
+C:\Users\antoine\Desktop\Projet Prog\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\obj\x86\Release\AS-3D-2015.csprojResolveAssemblyReference.cache
+C:\Users\antoine\Desktop\Projet Prog\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\antoine\Desktop\Projet Prog\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\obj\x86\Release\AS-3D-2015.exe
+C:\Users\antoine\Desktop\Projet Prog\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\obj\x86\Release\AS-3D-2015.pdb
+C:\Users\antoine\Desktop\Projet Prog\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Sounds\jump.xnb
+C:\Users\antoine\Desktop\Projet Prog\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Sounds\landing.xnb
+C:\Users\antoine\Desktop\Projet Prog\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Sounds\walk.xnb
+C:\Users\antoine\Desktop\Projet Prog\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Songs\backgroundMusic.xnb
+C:\Users\antoine\Desktop\Projet Prog\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Songs\backgroundMusic.wma
+C:\Users\antoine\Desktop\Projet Prog\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Sounds\First_Sentence.xnb
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Fonts\Arial20.xnb
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Models\airplane_blue.xnb
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Models\Feisar.xnb
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Models\ARC170.xnb
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\CielArrière.xnb
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\CielAvant.xnb
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\CielDroite.xnb
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\CielGauche.xnb
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\CielDessus.xnb
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\Terrain.xnb
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\TheWalkingDead.xnb
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\HungerGames.xnb
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\StarWars7.xnb
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\DétailsTerrain.xnb
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Sounds\landing.xnb
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Songs\backgroundMusic.xnb
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Sounds\First_Sentence.xnb
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Sounds\walk.xnb
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Sounds\jump.xnb
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Models\airplane_blue_tex_0.xnb
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\diffuse_0.xnb
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Models\ARC170_T_0.xnb
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Songs\backgroundMusic.wma
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\AS-3D-2015.exe
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\AS-3D-2015.pdb
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\obj\x86\Release\AS-3D-2015.csprojResolveAssemblyReference.cache
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\obj\x86\Release\AS-3D-2015.exe
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\obj\x86\Release\AS-3D-2015.pdb
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\Brick.xnb
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\old_brick.xnb
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\old_brick_01.xnb
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Textures\Tuile.xnb
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015\bin\x86\Release\Content\Sounds\walk_slow.xnb

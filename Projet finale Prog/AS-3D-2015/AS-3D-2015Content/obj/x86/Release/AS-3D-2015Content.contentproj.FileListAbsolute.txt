@@ -1,0 +1,3 @@
+C:\Users\antoine\Desktop\Antoine\Session 3\Programmation\Activité synthèse 3D\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015Content\obj\x86\Release\AS-3D-2015Content.contentprojResolveAssemblyReference.cache
+C:\Users\antoine\Desktop\Projet Prog\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015Content\obj\x86\Release\AS-3D-2015Content.contentprojResolveAssemblyReference.cache
+C:\Users\antoine\Desktop\Projet Prog\01_Projet finale Prog\AS-3D-2015\AS-3D-2015Content\obj\x86\Release\AS-3D-2015Content.contentprojResolveAssemblyReference.cache

@@ -1,0 +1,2 @@
+I:\Travaux\Session 3\Programming\Synthese 3DPD\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015Content\obj\x86\Debug\AS-3D-2015Content.contentprojResolveAssemblyReference.cache
+C:\Users\Denis\Desktop\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015Content\obj\x86\Debug\AS-3D-2015Content.contentprojResolveAssemblyReference.cache

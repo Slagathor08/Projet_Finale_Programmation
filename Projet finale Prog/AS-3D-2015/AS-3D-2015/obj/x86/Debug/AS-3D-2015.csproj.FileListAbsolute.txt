@@ -1,0 +1,48 @@
+I:\Travaux\Session 3\Programming\Synthese 3DPD\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\obj\x86\Debug\AS-3D-2015.csprojResolveAssemblyReference.cache
+I:\Travaux\Session 3\Programming\Synthese 3DPD\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+I:\Travaux\Session 3\Programming\Synthese 3DPD\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\Fonts\Arial20.xnb
+I:\Travaux\Session 3\Programming\Synthese 3DPD\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\Models\airplane_blue.xnb
+I:\Travaux\Session 3\Programming\Synthese 3DPD\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\Models\Feisar.xnb
+I:\Travaux\Session 3\Programming\Synthese 3DPD\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\Models\ARC170.xnb
+I:\Travaux\Session 3\Programming\Synthese 3DPD\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\Textures\CielArrière.xnb
+I:\Travaux\Session 3\Programming\Synthese 3DPD\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\Textures\CielAvant.xnb
+I:\Travaux\Session 3\Programming\Synthese 3DPD\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\Textures\CielDroite.xnb
+I:\Travaux\Session 3\Programming\Synthese 3DPD\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\Textures\CielGauche.xnb
+I:\Travaux\Session 3\Programming\Synthese 3DPD\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\Textures\CielDessus.xnb
+I:\Travaux\Session 3\Programming\Synthese 3DPD\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\Textures\Terrain.xnb
+I:\Travaux\Session 3\Programming\Synthese 3DPD\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\Textures\TheWalkingDead.xnb
+I:\Travaux\Session 3\Programming\Synthese 3DPD\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\Textures\HungerGames.xnb
+I:\Travaux\Session 3\Programming\Synthese 3DPD\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\Textures\StarWars7.xnb
+I:\Travaux\Session 3\Programming\Synthese 3DPD\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\Textures\DétailsTerrain.xnb
+I:\Travaux\Session 3\Programming\Synthese 3DPD\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\Models\airplane_blue_tex_0.xnb
+I:\Travaux\Session 3\Programming\Synthese 3DPD\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\diffuse_0.xnb
+I:\Travaux\Session 3\Programming\Synthese 3DPD\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\Models\ARC170_T_0.xnb
+I:\Travaux\Session 3\Programming\Synthese 3DPD\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\AS-3D-2015.exe
+I:\Travaux\Session 3\Programming\Synthese 3DPD\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\AS-3D-2015.pdb
+I:\Travaux\Session 3\Programming\Synthese 3DPD\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\AS-3D-Outils.dll
+I:\Travaux\Session 3\Programming\Synthese 3DPD\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\obj\x86\Debug\AS-3D-2015.exe
+I:\Travaux\Session 3\Programming\Synthese 3DPD\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\obj\x86\Debug\AS-3D-2015.pdb
+C:\Users\Denis\Desktop\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\Fonts\Arial20.xnb
+C:\Users\Denis\Desktop\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\Models\airplane_blue.xnb
+C:\Users\Denis\Desktop\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\Models\Feisar.xnb
+C:\Users\Denis\Desktop\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\Models\ARC170.xnb
+C:\Users\Denis\Desktop\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\Textures\CielArrière.xnb
+C:\Users\Denis\Desktop\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\Textures\CielAvant.xnb
+C:\Users\Denis\Desktop\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\Textures\CielDroite.xnb
+C:\Users\Denis\Desktop\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\Textures\CielGauche.xnb
+C:\Users\Denis\Desktop\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\Textures\CielDessus.xnb
+C:\Users\Denis\Desktop\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\Textures\Terrain.xnb
+C:\Users\Denis\Desktop\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\Textures\TheWalkingDead.xnb
+C:\Users\Denis\Desktop\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\Textures\HungerGames.xnb
+C:\Users\Denis\Desktop\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\Textures\StarWars7.xnb
+C:\Users\Denis\Desktop\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\Textures\DétailsTerrain.xnb
+C:\Users\Denis\Desktop\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\Models\airplane_blue_tex_0.xnb
+C:\Users\Denis\Desktop\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\diffuse_0.xnb
+C:\Users\Denis\Desktop\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\Content\Models\ARC170_T_0.xnb
+C:\Users\Denis\Desktop\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\AS-3D-2015.exe
+C:\Users\Denis\Desktop\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\AS-3D-2015.pdb
+C:\Users\Denis\Desktop\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\bin\x86\Debug\AS-3D-Outils.dll
+C:\Users\Denis\Desktop\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\obj\x86\Debug\AS-3D-2015.csprojResolveAssemblyReference.cache
+C:\Users\Denis\Desktop\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Denis\Desktop\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\obj\x86\Debug\AS-3D-2015.exe
+C:\Users\Denis\Desktop\AS-3D-2015 - À compléter\AS-3D-2015\AS-3D-2015\obj\x86\Debug\AS-3D-2015.pdb
