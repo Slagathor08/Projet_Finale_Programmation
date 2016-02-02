@@ -18,267 +18,269 @@ namespace AtelierXNA
     /// </summary>
     public class Caméra : Microsoft.Xna.Framework.GameComponent
     {
-        #region Attribues
-        string musicName;
-        string nomJumpSon;
-        string nomLandingSon;
-        string nomMarche;
-        string nomMarcheLente;
-        const float RAYON_COLLISION = 1f;
-        Vector3 cameraPosition;
-        Vector3 cameraRotation;
-        float cameraSpeed;
-        Vector3 cameraLookAt;
-        Vector3 cameraLookAtInit;
-        Vector3 gamePadRotationBuffer;
-        GamePadState currentGamePad;
-        GamePadState prevGamePad;
+        #region Attributs
+        const float RAYON_COLLISION = 0.5f;
         const float DEFAULT_JUMP_SPEED = 1f;
-        float jumpSpeed = 0f;
+        const float ASCEND_JUMP_SPEED = 0.5f;
         const float GRAVITY = -1f;
         const float STADE_MARCHE_VITE = 0.73f;
-        bool canJump = true;
-        bool remonte = false;
-        float cameraPositionInit;
-        bool walkingSound = true;
-        public BoundingSphere ZoneCollision { get; set; }
-        SoundManager GestionSounds { get; set; }
-        InputManager GestionInput { get; set; }
-        Vector3 rotationInitiale;
-        #endregion
+        const float NEAR_PLANE_DISTANCE = 0.05f;
+        const float FAR_PLANE_DISTANCE = 1000f;
+        const float VOLUME_FAIBLE = 0.1f;
+        const float VOLUME_MOYEN = 0.25f;
+        const float VOLUME_FORT = 0.4f;
+        const float ANGLE_ROTATION = 75f;
 
-        #region Constructeur
-        public Caméra(Game game, Vector3 position, Vector3 rotation, float speed, string jumpSoundName, string landingSoundName, string nomWalkName, string nomMusique, string nomMarcheSlow)
-            : base(game)
-        {
-            musicName = nomMusique;
-            nomJumpSon = jumpSoundName;
-            nomLandingSon = landingSoundName;
-            nomMarche = nomWalkName;
-            nomMarcheLente = nomMarcheSlow;
-            cameraPositionInit = position.Y;
-            cameraSpeed = speed;
-            rotationInitiale = rotation;
-            Projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver4,
-                Game.GraphicsDevice.Viewport.AspectRatio, 0.05f, 1000.0f);
-            MoveTo(position, rotation);
-            prevGamePad = GamePad.GetState(PlayerIndex.One);
-        }
-        private void MoveTo(Vector3 pos, Vector3 rot)
-        {
-            Rotation = rot;
-            Position = pos;
-           
-        }
-        #endregion
 
-        #region Propriétés
+        string MusicName { get; set; }
+        string NomJumpSon { get; set; }
+        string NomLandingSon { get; set; }
+        string NomMarche { get; set; }
+        string NomMarcheLente { get; set; }
+
+        float VitesseCamera { get; set; }
+        float VitesseSaut { get; set; }
+        float PositionInitialeCamera { get; set; }
+
+        bool PeutSauter { get; set; }
+        bool Remonte { get; set; }
+        bool SonDeMarcheActivé { get; set; }
+
+        Vector3 PositionCamera;
         public Vector3 Position
         {
-            get { return cameraPosition; }
+            get { return PositionCamera; }
             set
             {
-                cameraPosition = value;
+                PositionCamera = value;
                 UpdateLookAt();
             }
         }
+
+        Vector3 RotationCamera;
         public Vector3 Rotation
         {
-            get { return cameraRotation; }
+            get { return RotationCamera; }
             set
             {
-
-                cameraRotation = value;
-
+                RotationCamera = value;
                 UpdateLookAt();
-
             }
         }
-        public Matrix Projection
-        {
-            get;
-            protected set;
-        }
 
-        public Matrix View
+        Vector3 CameraLookAt;
+        Vector3 CameraLookAtInitial { get; set; }
+        Vector3 GamePadRotationBuffer;
+        Vector3 RotationInitiale { get; set; }
+
+        GamePadState CurrentGamePad { get; set; }
+        GamePadState PrevGamePad { get; set; }
+
+        SoundManager GestionSons { get; set; }
+        InputManager GestionInput { get; set; }
+        CollisionManager GestionCollisions { get; set; }
+
+        public BoundingSphere ZoneCollision { get; set; }
+
+        public Matrix Projection { get; set; }
+        public Matrix Vue
         {
             get
             {
-                return Matrix.CreateLookAt(cameraPosition, cameraLookAt, Vector3.Up);
+                return Matrix.CreateLookAt(PositionCamera, CameraLookAt, Vector3.Up);
             }
         }
         #endregion
+
+
+        #region Constructeur
+        public Caméra(Game game, Vector3 position, Vector3 rotation, float vitesse, string nomSonSaut, string nomSonAtterissage, string nomSonMarche, string nomMusique, string nomMarcheLente)
+            : base(game)
+        {
+
+            MusicName = nomMusique;
+            NomJumpSon = nomSonSaut;
+            NomLandingSon = nomSonAtterissage;
+            NomMarche = nomSonMarche;
+            NomMarcheLente = nomMarcheLente;
+            PositionInitialeCamera = position.Y;
+            VitesseCamera = vitesse;
+            RotationInitiale = rotation;
+
+            Rotation = rotation;
+            Position = position;
+
+        }
+        #endregion
+
 
         #region UpdateLookAt
         private void UpdateLookAt()
         {
-            Matrix rotationMatrix = Matrix.CreateRotationX(cameraRotation.X) * Matrix.CreateRotationY(cameraRotation.Y);
+            Matrix rotationMatrix = Matrix.CreateRotationX(RotationCamera.X) * Matrix.CreateRotationY(RotationCamera.Y);
             Vector3 lookAtOffset = Vector3.Transform(Vector3.UnitZ, rotationMatrix);
-            cameraLookAt = cameraPosition + lookAtOffset;
-            cameraLookAtInit = cameraLookAt;
+            CameraLookAt = PositionCamera + lookAtOffset;
+            CameraLookAtInitial = CameraLookAt;
         }
         #endregion
 
-        #region Initialize
-        
+
         public override void Initialize()
         {
             GestionInput = Game.Services.GetService(typeof(InputManager)) as InputManager;
-            GestionSounds = Game.Services.GetService(typeof(SoundManager)) as SoundManager;
+            GestionSons = Game.Services.GetService(typeof(SoundManager)) as SoundManager;
+            GestionCollisions = Game.Services.GetService(typeof(CollisionManager)) as CollisionManager;
+            PeutSauter = true;
+            SonDeMarcheActivé = true;
+            Projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver4,
+                         Game.GraphicsDevice.Viewport.AspectRatio, NEAR_PLANE_DISTANCE, FAR_PLANE_DISTANCE);
+            PrevGamePad = GamePad.GetState(PlayerIndex.One);
 
             base.Initialize();
         }
-        #endregion
 
-        #region PreviewMove
-        private Vector3 PreviewMove(Vector3 amount)
+        private Vector3 PreviewMove(Vector3 prochainMouvement)
         {
-            Matrix rotate = Matrix.CreateRotationY(cameraRotation.Y);
-            Vector3 movement = new Vector3(amount.X, amount.Y, amount.Z);
-            movement = Vector3.Transform(movement, rotate);
-            foreach (GameComponent c in Game.Components) 
-            { 
-                if(EstEnCollision(c,cameraPosition+movement))
+            Matrix rotate = Matrix.CreateRotationY(RotationCamera.Y);
+            Vector3 mouvement = new Vector3(prochainMouvement.X, prochainMouvement.Y, prochainMouvement.Z);
+            mouvement = Vector3.Transform(mouvement, rotate);
+
+            foreach (GameComponent c in Game.Components)
+            {
+                if (EstEnCollision(c, new Vector3(PositionCamera.X + mouvement.X, PositionCamera.Y, PositionCamera.Z)))
                 {
-                    walkingSound = false;
-                    return cameraPosition;
+                    Position = new Vector3(Position.X - mouvement.X, Position.Y, Position.Z);
+                }
+                if (EstEnCollision(c, new Vector3(PositionCamera.X, PositionCamera.Y, PositionCamera.Z + mouvement.Z)))
+                {
+                    Position = new Vector3(Position.X, Position.Y, Position.Z - mouvement.Z);
                 }
             }
-            walkingSound = true;
-
-            return cameraPosition + movement;
+            SonDeMarcheActivé = true;
+            return Position += mouvement;
         }
-        #endregion
 
-        #region Move
-        private void Move(Vector3 scale)
+        private void Bouger(Vector3 scale)
         {
-            MoveTo(PreviewMove(scale), Rotation);
+            PreviewMove(scale);
         }
-        #endregion
 
-        #region Update
-        /// <summary>
-        /// Allows the game component to update itself.
-        /// </summary>
-        /// <param name="gameTime">Provides a snapshot of timing values.</param>
+
         public override void Update(GameTime gameTime)
         {
-            float dt = (float)gameTime.ElapsedGameTime.TotalSeconds;
-            currentGamePad = GamePad.GetState(PlayerIndex.One);
-            KeyboardState ks = Keyboard.GetState();
+            float TempsÉcoulé = (float)gameTime.ElapsedGameTime.TotalSeconds;
+            CurrentGamePad = GamePad.GetState(PlayerIndex.One);
+            KeyboardState étatClavier = Keyboard.GetState();
             Vector3 moveVector = Vector3.Zero;
 
 
-            if (GestionInput.EstManetteActivé)
+            if (GestionInput.EstManetteActivée)
             {
-                GérerManette(dt);
-
+                GérerManette(TempsÉcoulé);
             }
+
             else
             {
-                GestionSounds.PauseSoundEffect(nomMarcheLente);
-                GestionSounds.PauseSoundEffect(nomMarche);
+                GestionSons.PauseSoundEffect(NomMarcheLente);
+                GestionSons.PauseSoundEffect(NomMarche);
             }
 
-            if (!canJump)
+            if (!PeutSauter)
             {
-                jumpSpeed += dt * GRAVITY;
-                cameraPosition.Y += jumpSpeed;
-                cameraLookAt.Y += jumpSpeed;
-            }
-            if (cameraPosition.Y < cameraPositionInit - 1)
-            {
-                jumpSpeed = 0.05f;
-                remonte = true;
+                VitesseSaut += TempsÉcoulé * GRAVITY;
+                PositionCamera.Y += VitesseSaut;
+                CameraLookAt.Y += VitesseSaut;
             }
 
-            if (remonte)
+            if (PositionCamera.Y < PositionInitialeCamera - 1)
             {
-                GestionSounds.Play(nomLandingSon, false, 0.1f);
-                jumpSpeed -= (dt * GRAVITY);
-                cameraPosition.Y += jumpSpeed;
-                cameraLookAt.Y += jumpSpeed;
+                VitesseSaut = ASCEND_JUMP_SPEED;
+                Remonte = true;
+            }
 
-                if (cameraPosition.Y > cameraPositionInit)
+            if (Remonte)
+            {
+                GestionSons.Play(NomLandingSon, false, VOLUME_FAIBLE);
+                VitesseSaut -= (TempsÉcoulé * GRAVITY);
+                PositionCamera.Y += VitesseSaut;
+                CameraLookAt.Y += VitesseSaut;
+
+                if (PositionCamera.Y > PositionInitialeCamera)
                 {
-                    float ajusterVue = cameraLookAt.Y - cameraPosition.Y;
-                    cameraPosition.Y = cameraPositionInit;
-                    cameraLookAt.Y = ajusterVue + cameraPosition.Y;
-                    canJump = true;
-                    remonte = false;
+                    float ajusterVue = CameraLookAt.Y - PositionCamera.Y;
+                    PositionCamera.Y = PositionInitialeCamera;
+                    CameraLookAt.Y = ajusterVue + PositionCamera.Y;
+                    PeutSauter = true;
+                    Remonte = false;
                 }
-               
             }
+
             base.Update(gameTime);
         }
-        #endregion
 
         #region GérerManette
-        void GérerManette(float dt)
+        void GérerManette(float tempsÉcoulé)
         {
-
             float deltaX, deltaY;
             Vector3 moveVector = Vector3.Zero;
 
             //Gérer les sauts
-            if ((GestionInput.EstBoutonEnfoncée(Buttons.A)) && canJump)
+            if ((GestionInput.EstBoutonEnfoncée(Buttons.A)) && PeutSauter)
             {
-                GestionSounds.PauseSoundEffect(nomMarche);
-                GestionSounds.Play(nomJumpSon, false, 0.4f);
-                jumpSpeed = DEFAULT_JUMP_SPEED;
-                canJump = false;
+                GestionSons.PauseSoundEffect(NomMarche);
+                GestionSons.Play(NomJumpSon, false, VOLUME_MOYEN);
+                VitesseSaut = DEFAULT_JUMP_SPEED;
+                PeutSauter = false;
             }
             //Gérer les déplacements du joystick droit
-            cameraLookAt.Y += GérerTouche(Buttons.RightThumbstickUp) - GérerTouche(Buttons.RightThumbstickDown);
-            cameraLookAt.X += GérerTouche(Buttons.RightThumbstickRight) - GérerTouche(Buttons.RightThumbstickLeft);
-            deltaY = cameraLookAt.Y - (Game.GraphicsDevice.Viewport.Height / 2);
-            deltaX = cameraLookAt.X - (Game.GraphicsDevice.Viewport.Width / 2);
-            gamePadRotationBuffer.Y += GamePad.GetState(PlayerIndex.One).ThumbSticks.Right.Y * 0.01f * deltaY * dt;
-            gamePadRotationBuffer.X += GamePad.GetState(PlayerIndex.One).ThumbSticks.Right.X * 0.01f * deltaX * dt;
-            
+            CameraLookAt.Y += GérerTouche(Buttons.RightThumbstickUp) - GérerTouche(Buttons.RightThumbstickDown);
+            CameraLookAt.X += GérerTouche(Buttons.RightThumbstickRight) - GérerTouche(Buttons.RightThumbstickLeft);
+            deltaY = CameraLookAt.Y - (Game.GraphicsDevice.Viewport.Height / 2f);
+            deltaX = CameraLookAt.X - (Game.GraphicsDevice.Viewport.Width / 2f);
+            GamePadRotationBuffer.Y += GamePad.GetState(PlayerIndex.One).ThumbSticks.Right.Y * 0.01f * deltaY * tempsÉcoulé;
+            GamePadRotationBuffer.X += GamePad.GetState(PlayerIndex.One).ThumbSticks.Right.X * 0.01f * deltaX * tempsÉcoulé;
+
 
             //Déplacement de la caméra avec le joystick gauche
             moveVector.Z = GamePad.GetState(PlayerIndex.One).ThumbSticks.Left.Y;
             moveVector.X = -GamePad.GetState(PlayerIndex.One).ThumbSticks.Left.X;
-            
+
             //Fait déplacer le Joueur
             if (moveVector != Vector3.Zero)
             {
-                if(!walkingSound)
-                    GestionSounds.PauseSoundEffect(nomMarche);
-                if (canJump && walkingSound && (moveVector.X > STADE_MARCHE_VITE || moveVector.X < -STADE_MARCHE_VITE 
+                if (!SonDeMarcheActivé)
+                    GestionSons.PauseSoundEffect(NomMarche);
+                if (PeutSauter && SonDeMarcheActivé && (moveVector.X > STADE_MARCHE_VITE || moveVector.X < -STADE_MARCHE_VITE
                                             || moveVector.Z > STADE_MARCHE_VITE || moveVector.Z < -STADE_MARCHE_VITE))
                 {
-                    GestionSounds.PauseSoundEffect(nomMarcheLente);
-                    GestionSounds.Play(nomMarche, true, 0.25f);
+                    GestionSons.PauseSoundEffect(NomMarcheLente);
+                    GestionSons.Play(NomMarche, true, VOLUME_MOYEN);
                 }
-                else if (canJump && walkingSound)
+                else if (PeutSauter && SonDeMarcheActivé)
                 {
-                    GestionSounds.PauseSoundEffect(nomMarche);
-                    GestionSounds.Play(nomMarcheLente, true, 0.25f);
+                    GestionSons.PauseSoundEffect(NomMarche);
+                    GestionSons.Play(NomMarcheLente, true, VOLUME_MOYEN);
                 }
 
-
-                //moveVector.Normalize();
-                moveVector *= dt * cameraSpeed;
-                Move(moveVector);
+                moveVector *= tempsÉcoulé * VitesseCamera;
+                Bouger(moveVector);
             }
 
-            if (gamePadRotationBuffer.Y < MathHelper.ToRadians(-75.0f))
-                gamePadRotationBuffer.Y = gamePadRotationBuffer.Y - (gamePadRotationBuffer.Y - MathHelper.ToRadians(-75.0f));
+            if (GamePadRotationBuffer.Y < MathHelper.ToRadians(-ANGLE_ROTATION))
+                GamePadRotationBuffer.Y = GamePadRotationBuffer.Y - (GamePadRotationBuffer.Y - MathHelper.ToRadians(-ANGLE_ROTATION));
 
-            if (gamePadRotationBuffer.Y > MathHelper.ToRadians(75.0f))
-                gamePadRotationBuffer.Y = gamePadRotationBuffer.Y - (gamePadRotationBuffer.Y - MathHelper.ToRadians(75.0f));
+            if (GamePadRotationBuffer.Y > MathHelper.ToRadians(ANGLE_ROTATION))
+                GamePadRotationBuffer.Y = GamePadRotationBuffer.Y - (GamePadRotationBuffer.Y - MathHelper.ToRadians(ANGLE_ROTATION));
 
-            Rotation = new Vector3(MathHelper.Clamp(gamePadRotationBuffer.Y+rotationInitiale.X, MathHelper.ToRadians(-75.0f), MathHelper.ToRadians(75.0f)),
-                MathHelper.WrapAngle(gamePadRotationBuffer.X+rotationInitiale.Y), 0);
+            Rotation = new Vector3(MathHelper.Clamp(GamePadRotationBuffer.Y + RotationInitiale.X, MathHelper.ToRadians(-ANGLE_ROTATION), MathHelper.ToRadians(ANGLE_ROTATION)),
+                MathHelper.WrapAngle(GamePadRotationBuffer.X + RotationInitiale.Y), 0);
 
 
             deltaX = 0;
             deltaY = 0;
         }
         #endregion
+
 
         #region GérerTouche
 
@@ -291,34 +293,28 @@ namespace AtelierXNA
         public bool EstEnCollision(object autreObjet, Vector3 camPos)
         {
             bool estEnCollision = false;
-            ZoneCollision = new BoundingSphere(camPos, 0.5f);
+            ZoneCollision = new BoundingSphere(camPos, RAYON_COLLISION);
 
             if (autreObjet is CubeColoré)
             {
                 CubeColoré mur = autreObjet as CubeColoré;
-                estEnCollision = ZoneCollision.Intersects(mur.ZoneCollision);
+                estEnCollision = GestionCollisions.CollisionJoueurMur(this, mur);
+
             }
 
             //if (autreObjet is Caméra)
             //{
             //    Caméra joueur = autreObjet as Caméra;
-            //    Vector3 distance = this.ZoneCollision.Center - joueur.ZoneCollision.Center;
-            //    float normeDist = distance.Length();
-            //    float somme = this.ZoneCollision.Radius + joueur.ZoneCollision.Radius;
-
-            //    estEnCollision = somme > normeDist;
+            //    GestionCollisions.CollisionJoueurs(this, joueur);
             //}
 
             //if (autreObjet is MONSTRE)
             //{
 
-            //CaméraSubjective joueur = autreObjet as CaméraSubjective;
-            //Vector3 distance = this.ZoneCollision.Center - joueur.ZoneCollision.Center;
-            //float normeDist = distance.Length();
-            //float somme = this.ZoneCollision.Radius + joueur.ZoneCollision.Radius;
-
-            //estEnCollision =  somme > normeDist;
+            //FuturZombie zombie = autreObjet as FuturZombie
+            //GestionCollisions.CollisionJoueurMonstre(this, zombie);
             //}
+
             return estEnCollision;
         }
     }

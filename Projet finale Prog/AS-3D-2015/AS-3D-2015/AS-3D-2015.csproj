@@ -116,6 +116,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Carte.cs" />
+    <Compile Include="CollisionManager.cs" />
     <Compile Include="CubeColoré.cs" />
     <Compile Include="Cylindre.cs" />
     <Compile Include="InputManager.cs">

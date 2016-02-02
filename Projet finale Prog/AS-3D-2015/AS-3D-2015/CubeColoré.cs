@@ -21,6 +21,7 @@ namespace AtelierXNA
         RessourcesManager<Texture2D> GestionnaireDeTextures { get; set; }
         Texture2D TextureCube { get; set; }
         public BoundingBox ZoneCollision { get; set; }
+        public BoundingSphere ZoneVerifCollision { get; set; }
 
         public CubeColoré(Game game, Vector3 positionInitiale, Vector3 dimension, string nomTexture)
             : base(game, 1f, Vector3.Zero, positionInitiale)
@@ -28,6 +29,7 @@ namespace AtelierXNA
             ZoneCollision = new BoundingBox(new Vector3(positionInitiale.X - dimension.X / 2, positionInitiale.Y - dimension.Y /2, positionInitiale.Z - dimension.Z / 2), 
                             new Vector3(positionInitiale.X + dimension.X / 2, positionInitiale.Y + dimension.Y , positionInitiale.Z + dimension.Z / 2));
             Delta = dimension;
+            ZoneVerifCollision = new BoundingSphere(positionInitiale, dimension.X);
             Origine = new Vector3(-Delta.X / 2, -Delta.Y / 2, -Delta.Z / 2);
             NomTexture = nomTexture;
         }
