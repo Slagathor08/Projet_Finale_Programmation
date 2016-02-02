@@ -100,7 +100,7 @@ namespace AtelierXNA
             {
                 for (int x = 0; x < NbColonnes + 1; ++x)
                 {
-                    PtsSommets[x, y] = new Vector3((float)(Origine.X * Math.Cos(graduationAngles * x)), Origine.Y + Delta.Y * (y), (float)(Origine.Z * Math.Sin(graduationAngles * x)));
+                    PtsSommets[x, y] = new Vector3(Origine.X+ Delta.Y * (x), (float)(Origine.Y * Math.Cos(graduationAngles * y)), (float)(Origine.Z * Math.Sin(graduationAngles * x)));
                 }
             }
         }
